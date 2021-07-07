@@ -50,9 +50,6 @@ Demo video on my iphone 6 ([baiduyun](https://pan.baidu.com/s/1nieS7dSMw6Kwzsa1d
 - [Semantic_Human_Matting](https://github.com/lizhengwei1992/Semantic_Human_Matting)
 
 - [PaddleX](https://github.com/PaddlePaddle/PaddleX)
-
-- 
-
   
 
 
