@@ -1,6 +1,7 @@
 '''
 Author  : Zhengwei Li
 Version : 1.0.0 
+
 '''
 
 import torch
@@ -187,10 +188,10 @@ class ERD_SegNet(nn.Module):
 
     def forward(self, input):
 
-        input_cascade1 = self.cascade1(input)
-        input_cascade2 = self.cascade2(input)
-        input_cascade3 = self.cascade3(input)
-        input_cascade4 = self.cascade4(input)
+        input_cascade1 = nn.AvgPool2d(3,2,1)(input)
+        input_cascade2 = nn.AvgPool2d(3,2,1)(input_cascade1)
+        input_cascade3 = nn.AvgPool2d(3,2,1)(input_cascade2)
+        input_cascade4 = nn.AvgPool2d(3,2,1)(input_cascade3)
 
         x = self.head_conv(input)
         # 1/2

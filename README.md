@@ -3,14 +3,16 @@ This project provides training and testing codes to build real_time human mattig
 
 # requirements
 - python3.5 / 3.6
-- pytorch 0.4/0.4.1
-- opencv-python
+- pytorch ~~0.4/0.4.1~~ 1.x
+- opencv-python (opencv > 4 because using DIS Optical flow algorithm)
 
 # Usage 
 
 ## train
 
 you need to prepare [dataset](https://github.com/lizhengwei1992/Fast_Portrait_Segmentation/tree/master/dataset) and run ```./train.sh```.
+
+not support pytorch 1.X and multi-gpu training now. (Maybe someday support)
 
 ## test
 use pre_trained model ```./pre_train/erd_seg_matting```.
@@ -27,7 +29,7 @@ Platform    : [***ncnn***](https://github.com/Tencent/ncnn).
 Mobile phone: Samsung Galaxy S8+(cpu).
 
 
-|            | model size (M) | time(ms)      | 
+|            | model size (M) | time(ms)      |
 | ---------- | :-----------:  | :-----------: |
 | erd_seg_matting    |          3.4     |     ~40          |
 
@@ -47,7 +49,11 @@ Demo video on my iphone 6 ([baiduyun](https://pan.baidu.com/s/1nieS7dSMw6Kwzsa1d
 - [Fast_Portrait_Segmentation](https://github.com/lizhengwei1992/Fast_Portrait_Segmentation)
 - [Semantic_Human_Matting](https://github.com/lizhengwei1992/Semantic_Human_Matting)
 
+- [PaddleX](https://github.com/PaddlePaddle/PaddleX)
 
+- 
+
+  
 
 
 
